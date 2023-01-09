@@ -1,0 +1,27 @@
+{1.- Implementar un programa que procese la información de las ventas de productos de un comercio (como máximo 20). 
+De cada venta se conoce código del producto (entre 1 y 15) y cantidad vendida (como máximo 99 unidades).  El ingreso de las ventas finaliza con el código 0 (no se procesa).
+a. Almacenar la información de las ventas en un vector. El código debe generarse automáticamente (random) y la cantidad se debe leer. 
+b. Mostrar el contenido del vector resultante.
+c. Ordenar el vector de ventas por código.
+d. Mostrar el contenido del vector resultante.
+e. Eliminar del vector ordenado las ventas con código de producto entre dos valores que se ingresan como parámetros. 
+f. Mostrar el contenido del vector resultante.
+g. Generar una lista ordenada por código de producto de menor a mayor a partir del vector resultante del inciso e., sólo para los códigos pares.
+h. Mostrar la lista resultante.}
+
+program p1_ej1;
+
+type 
+
+rangoCod = 0..15;
+rangoCant = 1..99;
+
+venta = record
+	cod:rangoCod;
+	cant:rangoCant;
+end;
+
+vectorVenta = array [1..20] of venta;
+
+
+procedu
